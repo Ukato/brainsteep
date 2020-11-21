@@ -1,0 +1,346 @@
+/*
+This is the primary stylesheet for philosotea.space
+*/
+
+/* CSS Global Level Styles and Variables */
+:root {
+  --primary-color: #48B500;
+  --secondary-color: #c2d8b9ff;
+  --tertiary-color: #63768dff;
+  --light-color: #e8e9ebff;
+  --dark-color: #3e3f3e;
+  /* --dark-color: hsla(150, 14%, 15%, 1); */
+  --max-width: 1200px;
+  --header-height: 80px;
+  --serif-font: 'Crimson Text', 'Times New Roman', Times, serif;
+  --san-serif-font: 'Arimo', Arial, Helvetica, sans-serif;
+
+  /* CSS HEX */
+  --ghost-white: #f4f4f8ff;
+  --rich-black: #002626ff;
+  --russian-green: #629677ff;
+  --coquelicot: #eb4511ff;
+  --viridian: #558b6eff;
+  /* --eggshell: hsla(47, 44%, 92%, 1);
+  --cafe-au-lait: hsla(33, 37%, 50%, 1);
+  --jet: hsla(60, 1%, 23%, 1);
+  --green-pantone: hsla(126, 38%, 48%, 1);
+  --dark-jungle-green: hsla(150, 14%, 15%, 1); */
+  /* --dark-jungle-green: #00272bff;
+  --platinum: #e8e9ebff;
+  --slate-gray: #63768dff;
+  --alloy-orange: #b86200ff;
+  --tea-green: #c2d8b9ff; */
+
+  /* CSS HSL */
+  /* --dark-jungle-green: hsla(186, 100%, 8%, 1);
+  --platinum: hsla(220, 7%, 92%, 1);
+  --slate-gray: hsla(213, 18%, 47%, 1);
+  --alloy-orange: hsla(32, 100%, 36%, 1);
+  --tea-green: hsla(103, 28%, 79%, 1); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark-color);
+  color: var(--light-color);
+  font-family: var(--san-serif-font);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+/* CSS Element Level Styles */
+h1 {
+  margin: 1rem 1rem 2rem;
+}
+
+p {
+  margin: 0 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0.4rem 1rem;
+  padding: 0.5rem;
+}
+
+li {
+  margin: 0.2rem 1rem;
+  padding: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  color: var(--dark-color);
+  transition: all 0.25s;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background: var(--primary-color);
+  width: 100%;
+  height: var(--header-height);
+  font-weight: bold;
+}
+
+main {
+  margin-top: var(--header-height);
+  width: 100%;
+  min-height: 75vh;
+}
+
+footer {
+  background: var(--primary-color);
+  width: 100%;
+  height: 100px;
+}
+
+section {
+  margin: 0 auto;
+}
+
+article {
+  font-family: var(--serif-font);
+}
+
+/* CSS Class Level Styles */
+
+/* Utility Classes */
+.top-container {
+  margin: 120px auto;
+  max-width: var(--max-width);
+}
+.underline {
+  margin: 0 auto;
+  background: var(--dark-color);
+  width: 0%;
+  height: 2px;
+  border-radius: 15px;
+}
+
+@keyframes show-underline {
+  from {
+    visibility: visible;
+    width: 0%;
+  }
+  to {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+a:hover + .underline {
+  animation: show-underline 250ms linear 0s 1 normal forwards;
+}
+
+.active {
+  color: var(--dark-color);
+}
+
+/* Header Styling */
+.top-nav {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 2fr;
+  grid-template-areas: "name links1 logo links2";
+  justify-items: center;
+  align-items: flex-start;
+}
+
+/* Future Addition - Hamburger Menu */
+/* .borgar {
+  display: none;
+  position: fixed;
+  margin: 1rem;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.menu-image {
+  display: none;
+  position: fixed;
+  margin: 1rem;
+  top: 20px;
+  width: 50px;
+  height: 2px;
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+.menu-image::before,
+.menu-image::after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  background: inherit;
+}
+
+.menu-image::after {
+  top: 15px;
+} */
+
+.site-name {
+  margin: 0 1rem;
+  max-width: 250px;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  grid-area: name;
+}
+
+.sitenav-left,
+.sitenav-right {
+  margin: 0;
+  padding: 0;
+  height: var(--header-height);
+  justify-self: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  grid-area: links1;
+}
+
+.sitenav-right {
+  justify-self: left;
+  grid-area: links2;
+}
+
+.logo-container {
+  grid-area: logo;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.top-logo {
+  margin: 3px 1rem 0;
+  width: 100px;
+}
+
+/* Quote Splash Styling */
+.quote-splash {
+  margin: var(--header-height) 0 0 0;
+  padding: 0;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "quote1 quote2 quote3";
+}
+
+.quote {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote p {
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+blockquote > footer {
+  padding-top: 1rem;
+  width: 70%;
+  height: auto;
+  background: none;
+  text-align: right;
+  justify-self: end;
+  align-self: flex-end;
+}
+
+/* Footer Styling */
+.footer-container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 200px 2fr;
+  grid-template-areas: "social teacup legal";
+  justify-content: center;
+}
+
+.platform-links,
+.copyright {
+  justify-self: left;
+  align-self: center;
+}
+
+.social-icons {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-area: social;
+}
+
+.teacup-container {
+  min-width: 200px;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-area: teacup;
+}
+
+.copyright {
+  justify-self: right;
+  grid-area: legal;
+}
+
+/* CSS ID Level Styles */
+#quote1 {
+  grid-area: quote1;
+  background-image: url(../img/quote1_dark_cropped.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+#quote2 {
+  grid-area: quote2;
+  background-image: url(../img/quote2_dark_cropped.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#quote3 {
+  grid-area: quote3;
+  background-image: url(../img/quote3_dark_cropped.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
