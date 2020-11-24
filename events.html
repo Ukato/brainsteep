@@ -20,54 +20,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="The homepage of Philosotea.  Our goal is simple: To share knowledge, good tea, and conversation.  Brew yourself some tea and come by to read, listen, or join us in a session!">
-  <meta name="keywords" content="tea,philosophy,podcast,blog,discussion,brainsteep,philosotea,knowledge,altspace,Cory Schmidt,oolong,puer,puerh">
-  <meta name="robots" content="NOINDEX, NOFOLLOW">
+  <meta name="author" content="Domino Pepeloni">
+  <meta name="description" content="The world's defacto site for discussions on tea and philosophy, in that order, always together.">
+  <meta name="keywords" content="tea, philosophy, podcast, blog, discussion, brainsteep, philosotea, knowledge, altspace, Cory Schmidt, white tea, black tea, green tea, oolong, puer, puerh, epistemology, VR">
   <!-- FontAwesome Icons -->
   <script src="https://kit.fontawesome.com/d26adfcc6a.js" crossorigin="anonymous"></script>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/responsive.css">
-  <title>Philosotea | Homepage</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <title>Philosotea | Events</title>
 </head>
 <body>
-  <!-- TOP NAV -->
-  <header>
-    <!-- Future Addition - Hamburger Menu -->
-    <!-- <input type="checkbox" class="borgar">
-    <div class="menu-image"></div> -->
-    <nav class="top-nav">
-      <div class="site-name">
-        <a href="/index.html">
-          <img class="top-name" src="/img/logo/logo_name.png" alt="site name: Philosotea." />
+  <!-- PAGE HEADER -->
+  <header id="page-header" class="outline">
+    <nav class="main-nav outline">
+      <div class="site-name outline">
+        <a href="./index.html">
+          <img id="top-name" src="./img/logo/logo_name.png" alt="the site name: Philosotea." />
         </a>
       </div>
-      <ul class="sitenav-left">
+      <ul class="sitenav-left outline">
         <li>
-          <a href="/tea.html">TEA</a>
+          <a href="./tea.html">TEA</a>
           <div class="underline"></div>
         </li>
         <li>
-          <a href="/philosophy.html">PHILOSOPHY</a>
+          <a href="./philosophy.html">PHILOSOPHY</a>
           <div class="underline"></div>
         </li>
       </ul>
-      <div class="logo-container">
-          <img class="top-logo" src="/img/logo/logo_head.png" alt="site logo. A head silhouette with an inset bundle of tea leaves made to look like a brain." />
+      <div class="site-logo outline">
+          <img id="top-logo" src="./img/logo/logo_head.png" alt="site logo. A head silhouette with an inset bundle of tea leaves made to look like a brain." />
       </div>
-      <ul class="sitenav-right">
+      <ul class="sitenav-right outline">
         <li>
-          <a href="/podcast.html">BRAINSTEEP</a>
+          <a href="./podcast.html">BRAINSTEEP</a>
+          <div class="underline"></div>
+        </li>
+        <li class="active">
+          <a href="./events.html">EVENTS</a>
           <div class="underline"></div>
         </li>
         <li>
-          <a class="active" href="/events.html">EVENTS</a>
-          <div class="underline"></div>
-        </li>
-        <li>
-          <a href="/about.html">ABOUT</a>
+          <a href="./about.html">ABOUT</a>
           <div class="underline"></div>
         </li>
       </ul>
@@ -75,13 +72,54 @@
   </header>
 
   <!-- PAGE CONTENT -->
-  <main>
-    <h1>Events Page</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos adipisci atque hic repellendus optio, voluptates, ea aliquam aliquid est temporibus vero voluptate sapiente culpa doloribus.</p>
+  <main class="main-content outline">
+    <section class="page-description outline">
+      <h1>Philosotea Events</h1>
+      <h2>because some people need attention...wait, why are you looking at us?</h2>
+      <p>Here you can find the latest information on any events we may have going on.  We mostly like to stay virtual, but who knows, maybe one day we'll see you in-person.  Wouldn't that be awkward?</p>
+    </section>
+    <section class="venue-info">
+      <div class="venue-intro">
+        <h2>AltSpace VR Events</h2>
+        <p>Altspace VR is a virtual meeting-space platform.  You get an avatar and can move around in 3D worlds. You can access it with a typical computer running Windows or through a VR headset.  We hold a number of different events here including live broadcasts of our podcast, Brainsteep, discussions with you guys and presentations about, you guessed it, tea and philosophy.  Visit <a href="https://altvr.com">altvr.com</a> to download the program, or find it in your VR provider's store if you're an early adoptor and have a VR headset.  It's free and fairly easy to use, but has a number of issues that will hopefully eventually get fixed.</p>
+      </div>
+      <h2>Latest Events</h2>
+      <div class="events-list">
+        <div class="event-card">
+          <img src="./img/logo/logo_head.png" alt="philosotea logo">
+          <h2>BrainSteep Live</h2>
+          <h3>Date: December 9th, 2020</h3>
+          <p>In this episode of Brainsteep we'll be discussing puerh cakes, and our estimates for when AI will take over the world.</p>
+          <div class="button">
+            <a href="https://account.altvr.com/channels/brainsteep">Link to Altspace listing</a>
+          </div>
+        </div>
+        <div class="event-card past-event">
+          <img src="./img/logo/logo_head.png" alt="philosotea logo">
+          <h2>Philosotea Presentation/Discussion</h2>
+          <h3>Date: September 4th, 2020</h3>
+          <p>Join Cory Schmidt for a tea 101 presentation and selected topic discussion.</p>
+          <div class="button">
+            <a href="https://account.altvr.com/events/1553227600690675833">Link to Altspace listing</a>
+          </div>
+        </div>
+        <div class="event-card past-event">
+          <img src="./img/logo/logo_head.png" alt="philosotea logo">
+          <h2>Philosotea Presentation/Discussion</h2>
+          <h3>Date: August 27th, 2020</h3>
+          <p>Join Cory Schmidt for a tea 101 presentation and selected topic discussion.</p>
+          <div class="button">
+            <a href="https://account.altvr.com/events/1546543020554322636">Link to Altspace listing</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- PAGE FOOTER -->
   <footer>
-    <div class="footer-container">
-      <nav class="platform-links">
+    <div class="footer-container outline">
+      <nav class="platform-links outline">
         <ul class="social-icons">
           <li>
             <a href="https://www.youtube.com/channel/UCFSVU8HtXFDh19BUQwHqa1g" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
@@ -100,13 +138,15 @@
           </li>
         </ul>
       </nav>
-      <div class="teacup-container">
-        <img class="teacup" src="/img/logo/logo_name.png" alt="site name, Philosotea.">
+      <div class="teacup-container outline">
+        <img id="teacup" src="./img/logo/logo_name.png" alt="site name, Philosotea.">
       </div>
-      <div class="copyright">
-        <p>Copyright &copy; 2020</p>
+      <div class="legal outline">
+        <p>All Rights Reserved &copy; 2020</p>
+        <P><a href="#terms">Terms and Conditions</a></P>
       </div>
     </div>
+    <p>Psych! This is the real end of the page. I bet you just looove Where's Waldo.  You sick f*ck.</p>
   </footer>
 </body>
 </html>
