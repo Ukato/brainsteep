@@ -28,43 +28,45 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
   <title>Philosotea | Events</title>
 </head>
 <body>
   <!-- PAGE HEADER -->
-  <header id="page-header" class="outline">
-    <nav class="main-nav outline">
-      <div class="site-name outline">
-        <a href="./index.html">
-          <img id="top-name" src="./img/logo/logo_name.png" alt="the site name: Philosotea." />
+  <header id="page-header">
+    <input type="checkbox" class="menu-toggle">
+    <span class="close-icon fas fa-times-circle fa-2x"></span>
+    <nav class="main-nav">
+      <div class="site-logo">
+        <img id="top-logo" src="/img/logo/logo_head.png" alt="site logo. A head silhouette with an inset bundle of tea leaves made to look like a brain." />
+      </div>
+      <div class="site-name">
+        <a href="/index.html">
+          <img id="top-name" src="/img/logo/logo_name.png" alt="the site name: Philosotea." />
         </a>
       </div>
-      <ul class="sitenav-left outline">
+      <ul class="sitenav-left">
         <li>
-          <a href="./tea.html">TEA</a>
+          <a href="/tea.html">TEA</a>
           <div class="underline"></div>
         </li>
         <li>
-          <a href="./philosophy.html">PHILOSOPHY</a>
+          <a href="/philosophy.html">PHILOSOPHY</a>
           <div class="underline"></div>
         </li>
       </ul>
-      <div class="site-logo outline">
-          <img id="top-logo" src="./img/logo/logo_head.png" alt="site logo. A head silhouette with an inset bundle of tea leaves made to look like a brain." />
-      </div>
-      <ul class="sitenav-right outline">
+      <ul class="sitenav-right">
         <li>
-          <a href="./podcast.html">BRAINSTEEP</a>
+          <a href="/podcast.html">BRAINSTEEP</a>
           <div class="underline"></div>
         </li>
         <li class="active">
-          <a href="./events.html">EVENTS</a>
+          <a href="/events.html">EVENTS</a>
           <div class="underline"></div>
         </li>
         <li>
-          <a href="./about.html">ABOUT</a>
+          <a href="/about.html">ABOUT</a>
           <div class="underline"></div>
         </li>
       </ul>
@@ -86,7 +88,7 @@
       <h2>Latest Events</h2>
       <div class="events-list">
         <div class="event-card">
-          <img src="./img/logo/logo_head.png" alt="philosotea logo">
+          <img src="/img/logo/logo_head.png" alt="philosotea logo">
           <h2>BrainSteep Live</h2>
           <h3>Date: December 9th, 2020</h3>
           <p>In this episode of Brainsteep we'll be discussing puerh cakes, and our estimates for when AI will take over the world.</p>
@@ -95,7 +97,7 @@
           </div>
         </div>
         <div class="event-card past-event">
-          <img src="./img/logo/logo_head.png" alt="philosotea logo">
+          <img src="/img/logo/logo_head.png" alt="philosotea logo">
           <h2>Philosotea Presentation/Discussion</h2>
           <h3>Date: September 4th, 2020</h3>
           <p>Join Cory Schmidt for a tea 101 presentation and selected topic discussion.</p>
@@ -104,7 +106,7 @@
           </div>
         </div>
         <div class="event-card past-event">
-          <img src="./img/logo/logo_head.png" alt="philosotea logo">
+          <img src="/img/logo/logo_head.png" alt="philosotea logo">
           <h2>Philosotea Presentation/Discussion</h2>
           <h3>Date: August 27th, 2020</h3>
           <p>Join Cory Schmidt for a tea 101 presentation and selected topic discussion.</p>
@@ -118,8 +120,8 @@
 
   <!-- PAGE FOOTER -->
   <footer>
-    <div class="footer-container outline">
-      <nav class="platform-links outline">
+    <div class="footer-container">
+      <nav class="platform-links">
         <ul class="social-icons">
           <li>
             <a href="https://www.youtube.com/channel/UCFSVU8HtXFDh19BUQwHqa1g" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
@@ -138,15 +140,15 @@
           </li>
         </ul>
       </nav>
-      <div class="teacup-container outline">
-        <img id="teacup" src="./img/logo/logo_name.png" alt="site name, Philosotea.">
+      <div class="teacup-container">
+        <img id="teacup" src="/img/logo/logo_name.png" alt="site name, Philosotea.">
       </div>
-      <div class="legal outline">
+      <div class="legal">
         <p>All Rights Reserved &copy; 2020</p>
         <P><a href="#terms">Terms and Conditions</a></P>
       </div>
     </div>
-    <p>Psych! This is the real end of the page. I bet you just looove Where's Waldo.  You sick f*ck.</p>
+    <p id="easteregg">Psych! This is the real end of the page. I bet you just looove Where's Waldo.  You sick f*ck.</p>
   </footer>
 </body>
 </html>

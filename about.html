@@ -28,43 +28,45 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
   <title>Philosotea | About</title>
 </head>
 <body>
   <!-- PAGE HEADER -->
-  <header id="page-header" class="outline">
-    <nav class="main-nav outline">
-      <div class="site-name outline">
-        <a href="./index.html">
-          <img id="top-name" src="./img/logo/logo_name.png" alt="the site name: Philosotea." />
+  <header id="page-header">
+    <input type="checkbox" class="menu-toggle">
+    <span class="close-icon fas fa-times-circle fa-2x"></span>
+    <nav class="main-nav">
+      <div class="site-logo">
+        <img id="top-logo" src="/img/logo/logo_head.png" alt="site logo. A head silhouette with an inset bundle of tea leaves made to look like a brain." />
+      </div>
+      <div class="site-name">
+        <a href="/index.html">
+          <img id="top-name" src="/img/logo/logo_name.png" alt="the site name: Philosotea." />
         </a>
       </div>
-      <ul class="sitenav-left outline">
+      <ul class="sitenav-left">
         <li>
-          <a href="./tea.html">TEA</a>
+          <a href="/tea.html">TEA</a>
           <div class="underline"></div>
         </li>
         <li>
-          <a href="./philosophy.html">PHILOSOPHY</a>
+          <a href="/philosophy.html">PHILOSOPHY</a>
           <div class="underline"></div>
         </li>
       </ul>
-      <div class="site-logo outline">
-          <img id="top-logo" src="./img/logo/logo_head.png" alt="site logo. A head silhouette with an inset bundle of tea leaves made to look like a brain." />
-      </div>
-      <ul class="sitenav-right outline">
+      <ul class="sitenav-right">
         <li>
-          <a href="./podcast.html">BRAINSTEEP</a>
+          <a href="/podcast.html">BRAINSTEEP</a>
           <div class="underline"></div>
         </li>
         <li>
-          <a href="./events.html">EVENTS</a>
+          <a href="/events.html">EVENTS</a>
           <div class="underline"></div>
         </li>
         <li class="active">
-          <a href="./about.html">ABOUT</a>
+          <a href="/about.html">ABOUT</a>
           <div class="underline"></div>
         </li>
       </ul>
@@ -93,7 +95,7 @@
       </div>
     </section>
     <section class="quote-splash outline" cite="https://philosotea.space/">
-      <blockquote>
+      <blockquote id="quote6" class="quote">
         <p>"I think existence is the funniest thing to hit reality since the big bang!</p>
         <footer>-Cory Schmidt, <cite>Philosotea.website</cite></footer>
       </blockquote>
@@ -103,13 +105,13 @@
       <h2>Beautiful Pictures and Cool Captions Section</h2>
       <h3>because all media is made by somebody, at least for now...</h3>
       <div class="profile outline">
-        <img src="./img/cory-sun-henna-cropped.jpg" alt="a dude with some henna on his arm covering half his face and acting all cool">
+        <img src="/img/cory-sun-henna-cropped.jpg" alt="a dude with some henna on his arm covering half his face and acting all cool">
         <h2>Cory Schmidt</h2>
         <h4>Philosotea Creator, Brainsteep Host, Tea Drinker, Deep Thinker</h4>
         <p>The guy that started it all. I mean, not everything, just Philosotea.  Yes, I'm speaking about myself in the third-person, because I, Cory Schmidt, am writing this profile.  Send all complaints to thevoid@philosotea.website</p>
       </div>
       <div class="profile">
-        <img src="./img/man-thinking.png" alt="a random guy thinking">
+        <img src="/img/man-thinking.png" alt="a random guy thinking">
         <h2>You're name here</h2>
         <h4>Author, Podcast Guest, Oolong Lover</h4>
         <p>Someone else that contributes to this site could have a profile just like this one!  That could be you!</p>
@@ -139,8 +141,8 @@
 
   <!-- PAGE FOOTER -->
   <footer>
-    <div class="footer-container outline">
-      <nav class="platform-links outline">
+    <div class="footer-container">
+      <nav class="platform-links">
         <ul class="social-icons">
           <li>
             <a href="https://www.youtube.com/channel/UCFSVU8HtXFDh19BUQwHqa1g" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
@@ -159,15 +161,15 @@
           </li>
         </ul>
       </nav>
-      <div class="teacup-container outline">
-        <img id="teacup" src="./img/logo/logo_name.png" alt="site name, Philosotea.">
+      <div class="teacup-container">
+        <img id="teacup" src="/img/logo/logo_name.png" alt="site name, Philosotea.">
       </div>
-      <div class="legal outline">
+      <div class="legal">
         <p>All Rights Reserved &copy; 2020</p>
         <P><a href="#terms">Terms and Conditions</a></P>
       </div>
     </div>
-    <p>Psych! This is the real end of the page. I bet you just looove Where's Waldo.  You sick f*ck.</p>
+    <p id="easteregg">Psych! This is the real end of the page. I bet you just looove Where's Waldo.  You sick f*ck.</p>
   </footer>
 </body>
 </html>

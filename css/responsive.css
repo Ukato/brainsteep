@@ -2,3 +2,64 @@
 This stylesheet is for responsive design styling for Philosotea.space
 */
 
+/* Display full header at larger screen sizes */
+@media screen and (min-width:768px) {
+  /* Header Styling */
+  .main-nav {
+    grid-template-columns: 0.7fr 0.8fr 0.5fr 1.5fr;
+    grid-template-areas: "name nav-left logo nav-right";
+    font-weight: bold;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-name {
+    padding: 0 0.5rem;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: name;
+  }
+
+  .site-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+  }
+
+  .sitenav-left,
+  .sitenav-right {
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    height: inherit;
+    justify-self: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sitenav-right {
+    justify-self: left;
+  }
+
+  /* Footer Styling */
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "social teacup legal";
+  }
+
+  /* Showcase Styling */
+  .double-showcase {
+    flex-direction: row;
+  }
+
+  #top-name {
+    width: clamp(170px, 15vw, 200px);
+  }
+}
