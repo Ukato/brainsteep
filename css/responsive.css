@@ -59,6 +59,15 @@ This stylesheet is for responsive design styling for Philosotea.space
     flex-direction: row;
   }
 
+  /* Profiles Section */
+  .profiles-area h2 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .profiles-area h3 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
   #top-name {
     width: clamp(170px, 15vw, 200px);
   }
