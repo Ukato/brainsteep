@@ -34,14 +34,19 @@
 </head>
 <body>
   <!-- PAGE HEADER -->
-  <header id="page-header" class="outline">
-    <nav class="main-nav outline">
-      <div class="site-name outline">
+  <header id="page-header">
+    <input type="checkbox" class="menu-toggle">
+    <span class="close-icon fas fa-times-circle fa-2x"></span>
+    <nav class="main-nav">
+      <div class="site-logo">
+        <img id="top-logo" src="/img/logo/logo_head.png" alt="site logo. A head silhouette with an inset bundle of tea leaves made to look like a brain." />
+      </div>
+      <div class="site-name">
         <a href="/index.html">
           <img id="top-name" src="/img/logo/logo_name.png" alt="the site name: Philosotea." />
         </a>
       </div>
-      <ul class="sitenav-left outline">
+      <ul class="sitenav-left">
         <li>
           <a href="/tea.html">TEA</a>
           <div class="underline"></div>
@@ -51,10 +56,7 @@
           <div class="underline"></div>
         </li>
       </ul>
-      <div class="site-logo outline">
-          <img id="top-logo" src="/img/logo/logo_head.png" alt="site logo. A head silhouette with an inset bundle of tea leaves made to look like a brain." />
-      </div>
-      <ul class="sitenav-right outline">
+      <ul class="sitenav-right">
         <li>
           <a href="/podcast.html">BRAINSTEEP</a>
           <div class="underline"></div>
@@ -72,20 +74,26 @@
   </header>
 
   <!-- PAGE CONTENT -->
-  <main class="main-content article-page outline">
-    <div class="article-mast outline">
-      <img src="/img/hand-pour.png" alt="">
+  <main class="main-content">
+    <div class="article-mast content-container">
+      <img src="https://source.unsplash.com/900x400/?green,tea" alt="">
     </div>
-    <article>
+    <article class="content-container light-theme">
       <h1>Love for Karigane</h1>
-      <h2>Chasing the wild goose tea</h2>
-      <div class="article-header outline">
-        <div class="category-tag green-tag"><a href="/tea-articles/green/articles-directory.html">Green</a></div>
-        <img src="/img/Cory_headcrop(S).jpg" alt="cory schmidt, the author of this article">
-        <h4>By <a href="/by-author/cory-schmidt.html">Cory Schmidt</a></h4>
+      <h2><em>Chasing the wild goose tea</em></h2>
+      <div class="article-header">
+        <div class="category-tags">
+          <a class="tag green-tag" href="/tea-articles/green/articles-directory.html">green</a>
+        </div>
+        <div class="article-metainfo">
+          <a href="/by-author/cory-schmidt.html"><img src="/img/authors/Cory_headcrop(S).jpg" alt="cory schmidt, the author of this article"></a>
+          <h4>
+            By <a href="/by-author/cory-schmidt.html">Cory Schmidt</a>
+          </h4>
+        </div>
         <h3>| November 25th, 2020</h3>
       </div>
-      <div class="article-body outline">
+      <div class="article-body">
         <p>It was the summer of 2014.  I had decided I would be leaving Japan, possibly for good, after having lived there for over three years.  I knew I wanted to try and fill any empty space in my luggage with bags of the finest tea Japan had to offer, that I could afford.  I had made some contacts in the tea business while living in Osaka so when my friend Yuji offered to take me to a tea wholesaler he was working with at the time I couldn't resist.  Little did I know that on this excursion I'd be introduced to a new type of Japanese green tea.</p>
         <p>Karigane-cha(雁が音）roughly translates to wild goose call.  I honestly can't find an origin story to the naming of this tea.  If I find it I'll be sure to add it to this article.  Regardless, it's an interesting name for an interesting tea.  See, it's typically categorized as a stem tea or, in Japanese, kuki-cha(茎茶).  Stem tea is generally not a high-quality, or at least high-value, product.  Most people familiar with kuki-cha picture a very dark brown, sometimes almost black, pile of tea twigs and stems.  That is because most of it is actually roasted before presented to the consumer.  Now, don't get me wrong, I love your standard roasted kuki-cha.  It's refreshing and awesome ice-cold in the summer, particularly.  However, karigane-cha is truly an outlier in this category of tea.</p>
         <p>Firstly, I argue it should barely be called a stem tea. True, a good portion of the volume comes from stems, but a good quality karigane has plenty of leaf that makes up its mass.  Secondly, it is made from non-standard tea plants.  You see, a small portion of the tea crop in Japan is grown to become one of two types of shade-grown teas: kabuse-cha(かぶせ茶) and gyokuro(玉露).  It is from these same plants, mostly kabuse-cha I'd imagine, that high-quality karigane-cha is made.  This makes its flavor profile very intense, yet somehow mellow as well with the inclusion of so many stems.</p>
@@ -94,48 +102,18 @@
         <p>This article is a bit of a work in progress, and I'll probably add to it soon.  I hope this has helped you get acquainted with a tea you may have not even known about or heard of.  If ever in your searches for a new tea you come across a good looking karigane I hope you'll give it a try.</p>
       </div>
     </article>
-    <div class="article-suggestions outline">
-      <h2>Even though you should feel proud after reading one article, think of how much swagger you'll have if you complete a few more...</h2>
-      <div class="article-card">
-        <img src="/img/gorilla-think.png" alt="a teaset on a stool">
-        <div class="category-tag concepts-tag"><a href="">Concepts</a></div>
-        <h2>Another article about philosophy</h2>
-        <h3>Subtitle Poggers</h3>
-        <h4>By <a href="/by-author/cory-schmidt.html">Cory Schmidt</a> | October 31st, 2020</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptate vel corrupti!</p>
-        <a href=""></a>
-      </div>
-      <div class="article-card">
-        <img src="/img/yixing-stool.png" alt="a teaset on a stool">
-        <div class="category-tag oolong-tag"><a href="">Oolong</a></div>
-        <h2>The Best Title</h2>
-        <h3>Tea #3</h3>
-        <h4>By <a href="/by-author/cory-schmidt.html">Cory Schmidt</a> | August 7th, 1999</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non dolorem recusandae deserunt nihil vitae officia, animi odit exercitationem consequuntur, voluptatum laboriosam soluta. Quibusdam vel amet alias voluptas doloribus quidem ex ducimus, odit dolorum aut fuga in excepturi, nam ipsa laborum eaque repellat pariatur expedita?</p>
-        <a href=""></a>
-      </div>
-      <div class="article-card">
-        <img src="/img/yixing-stool.png" alt="a teaset on a stool">
-        <div class="category-tag puer-tag"><a href="">Puer</a></div>
-        <h2>Second Best Title</h2>
-        <h3>Puer tea cake</h3>
-        <h4>By <a href="/by-author/cory-schmidt.html">Cory Schmidt</a> | February 20th, 2026</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, commodi iste! Fuga molestias nisi numquam!</p>
-        <a href=""></a>
-      </div>
-    </div>
   </main>
 
   <!-- PAGE FOOTER -->
   <footer>
-    <div class="footer-container outline">
-      <nav class="platform-links outline">
+    <div class="footer-container">
+      <nav class="platform-links">
         <ul class="social-icons">
           <li>
             <a href="https://www.youtube.com/channel/UCFSVU8HtXFDh19BUQwHqa1g" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
           </li>
           <li>
-            <a href="https://account.altvr.com/channels/brainsteep" target="_blank"><i class="fas fa-podcast fa-2x"></i></a>
+            <a href="https://soundcloud.com/philosoteapodcast" target="_blank"><i class="fas fa-podcast fa-2x"></i></a>
           </li>
           <li>
             <a href="#Twitter" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
@@ -148,15 +126,15 @@
           </li>
         </ul>
       </nav>
-      <div class="teacup-container outline">
+      <div class="teacup-container">
         <img id="teacup" src="/img/logo/logo_name.png" alt="site name, Philosotea.">
       </div>
-      <div class="legal outline">
+      <div class="legal">
         <p>All Rights Reserved &copy; 2020</p>
         <P><a href="#terms">Terms and Conditions</a></P>
       </div>
     </div>
-    <p>Psych! This is the real end of the page. I bet you just looove Where's Waldo.  You sick f*ck.</p>
+    <p id="easteregg">Psych! This is the real end of the page. I bet you just looove Where's Waldo.  You sick f*ck.</p>
   </footer>
 </body>
 </html>
