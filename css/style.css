@@ -325,6 +325,7 @@ article .article-intro p {
     max-width: var(--max-width);
     font-weight: normal;
     display: grid;
+    justify-items: center;
   }
 
   .profiles-area h2 {
@@ -807,6 +808,10 @@ article .article-intro p {
     color: var(--light-color);
   }
 
+  .light-theme .button > a:hover {
+    color: var(--light-color);
+  }
+
   .dark-theme {
     background: var(--dark-color);
     color: var(--light-color);
@@ -814,6 +819,10 @@ article .article-intro p {
 
   .dark-theme a {
     color: var(--light-color);
+  }
+
+  .dark-theme .button > a:hover {
+    color: var(--dark-color);
   }
 
   .dark-theme .category-tags > a {

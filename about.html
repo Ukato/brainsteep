@@ -128,7 +128,7 @@
     <section class="contact">
       <h2>Have something to say? Say it!</h2>
       <h3>We promise this form doesn't submit your message into the void.  It may just be that we're laughing too hard to respond.</h3>
-      <form class="contact-form" action="process.php" method="POST">
+      <form name="contact" class="contact-form" method="POST" data-netlify="true">
         <div class="form-section">
           <label for="name">Name</label>
           <input type="text" name="name" id="name" placeholder="Enter a name" required>
@@ -141,7 +141,7 @@
           <label for="message">Your Message</label>
           <textarea name="message" id="message" placeholder="Spill your heart out" required></textarea>
         </div>
-        <input type="submit" value="Submit" id="submit" class="button">
+        <input type="submit" value="Send" id="submit" class="button">
       </form>
     </section>
   </main>
