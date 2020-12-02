@@ -1,1 +1,0 @@
-# philosotea website base code

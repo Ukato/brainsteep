@@ -1,0 +1,39 @@
+// global variables and functions
+$max-width: 1100px;
+$logo-width: clamp(50px, 100px, 20vw);
+$header-height: $logo-width * 0.8;
+$sanserif-font1: 'Arimo', Arial, Helvetica, sans-serif;
+$sanserif-font2: 'Arimo', Arial, Helvetica, sans-serif;
+$serif-font: 'Crimson Text', 'Times New Roman', Times, serif;
+
+$colors: (
+  primary: #588157,
+  secondary: #c2d8b9,
+  tertiary: #63768dff,
+  light: #e8e9eb,
+  dark: #3e3f3e
+);
+
+@function paint($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$margin: (
+  light: 1rem,
+  medium: 2rem,
+  heavy: 4rem,
+  horizontal: 1.5rem,
+  vertical: 1.5rem
+);
+
+@function pad($pad-amount) {
+  @return map-get($margin, $pad-amount);
+}
+
+$padding: (
+  light: 1rem,
+  medium: 2rem,
+  heavy: 4rem,
+  horizontal: 1.5rem,
+  vertical: 1.5rem
+);
