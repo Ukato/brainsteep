@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'functions';
-@import 'responsive';
 
 
 // GLOBAL STYLES
@@ -37,6 +36,14 @@ body {
     margin-top: 2rem;
     width: 100%;
     background-color: paint(primary);
+
+    a {
+      color: paint(light);
+
+      &:hover {
+        color: paint(dark);
+      }
+    }
   }
 }
 
@@ -57,16 +64,19 @@ nav {
     list-style: none;
 
     li {
-      margin: 0.4rem;
+      margin: 0.2rem 0.6rem;
       padding: 0.2rem;
     }
   }
 }
 
 ol {
+  margin-left: 1.5rem;
+  padding: pad(medium);
+
   li {
-    margin: 1rem 0.5rem;
-    font-size: fsize(large);
+    margin: separate(vertical);
+    font-size: fsize(regular);
   }
 }
 
@@ -77,6 +87,8 @@ p {
 }
 
 article {
+  padding: 4rem 1.5rem 5rem;
+
   h1 {
     font-size: fsize(larger);
     font-weight: bold;
@@ -111,7 +123,7 @@ article {
   height: inherit;
   margin: 0 auto;
   padding: 0.25rem;
-  // background: paint(primary);
+  background: paint(primary);
   display: grid;
   grid-template-columns: 0.5fr 1.5fr;
   grid-template-areas: "logo name";
@@ -237,7 +249,7 @@ article {
     align-items: center;
 
     p {
-      margin: separate(light);
+      margin: separate(horizontal);
     }
   }
 }
@@ -252,13 +264,13 @@ article {
 
 .showcase {
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 3rem 1.5rem;
   max-width: $max-width;
   display: flex;
   flex-direction: column;
 
   h1 {
-    margin: 2rem;
+    margin: 1.5rem 0.5rem;
     font-size: fsize(larger);
     text-align: center;
   }
@@ -271,12 +283,13 @@ article {
 
   h3 {
     margin-bottom: 1.5rem;
-    font-size: fsize(normal);
+    font-size: fsize(regular);
     font-weight: bold;
   }
 
   .button {
     align-self: flex-end;
+    font-weight: bold;
   }
 }
 
@@ -285,11 +298,19 @@ article {
   flex-direction: column;
 }
 
+.intro {
+  margin-bottom: separate(medium);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
 
 // ABOUT PAGE
 
 .about-info {
-  padding-top: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "main"
@@ -314,7 +335,6 @@ article {
     }
 
     h3 {
-      margin-bottom: 1rem;
       font-weight: lighter;
       text-align: center;
     }
@@ -322,7 +342,8 @@ article {
 }
 
 .profiles-area {
-  margin: 3rem auto;
+  margin: 1rem auto;
+  padding: 3rem 0rem;
   max-width: $max-width;
   font-weight: normal;
   display: grid;
@@ -372,8 +393,8 @@ article {
 
 .contact {
   margin: 0 auto;
-  padding: pad(medium);
-  max-width: var(--max-width);
+  padding: 3rem 1.5rem;
+  max-width: $max-width;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -382,10 +403,11 @@ article {
 
   h2 {
     align-self: center;
+    font-size: fsize(large);
   }
 
   h3 {
-    margin: separate(light);
+    margin: separate(vertical);
     align-self: center;
   }
 }
@@ -461,14 +483,14 @@ article {
 // QUOTE SPLASH
 
 .quote-splash {
-  max-height: 50vh;
+  max-height: 70vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .quote {
-    padding: 5rem 0;
+    padding: 3.5rem 0.5rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -477,11 +499,11 @@ article {
     align-items: center;
 
     p {
-      margin: 0 2rem;
       padding: 0.5rem;
+      max-width: $max-width;
       text-align: center;
-      font-size: fsize(larger);
-      line-height: lheight(larger);
+      font-size: clamp(1.6rem, 2vw, 2.4rem);
+      line-height: lheight(large);
     }
 
     footer {
@@ -498,11 +520,15 @@ article {
 
 // PAGE HEADERS
 
-.page-description h2 {
+.page-description {
+
+  h2 {
   margin: separate(medium);
   font-size: fsize(large);
   text-transform: uppercase;
   font-weight: lighter;
+  text-align: center;
+  }
 
   p {
     margin: 0.5rem 1.5rem;
@@ -549,12 +575,13 @@ article {
 .card {
   margin: 0.5rem 1rem;
   max-width: 500px;
+  height: 100%;
   display: grid;
   grid-template-rows: 0.25fr 0.25fr 0.5fr;
   grid-template-areas: "image"
                        "header"
                        "body";
-  border: 2px solid white;
+  border-radius: 10px;
 
   :hover {
     img {
@@ -578,7 +605,7 @@ article {
 
     h3 {
       margin-bottom: 1rem;
-      font-weight: bolder;
+      font-weight: bold;
     }
 
     h4 {
@@ -589,12 +616,19 @@ article {
 
   .card-body {
     padding: 0.5rem 1rem;
-    height: 100%;
     grid-area: body;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     p {
       font-weight: normal;
       text-indent: 0;
+    }
+
+    .button {
+      min-width: 200px;
+      align-self: center;
     }
   }
 }
@@ -603,8 +637,6 @@ article {
 // EVENTS/VENUE
 
 .venue-info {
-  margin-top: 2rem;
-  padding-top: 2rem;
 }
 
 .venue-intro {
@@ -614,17 +646,20 @@ article {
     margin: 1rem 0 2rem;
     text-align: center;
   }
+
+  p {
+    margin-bottom: 3rem;
+    padding: pad(horizontal);
+  }
 }
 
 
 // ARTICLE PAGE
 
 .article-mast {
-  padding: 4rem 1rem 1rem;
 
   img {
-    margin-top: 2rem;
-    border: 5px solid paint(primary);
+    margin-top: 5rem;
   }
 }
 
@@ -776,7 +811,7 @@ a:hover + .underline {
 } 
 
 .button {
-  margin: separate(light);
+  margin: separate(medium);
   padding: 0.75rem 0.75rem;
   display: inline-block;
   background: paint(primary);
@@ -787,7 +822,6 @@ a:hover + .underline {
 
 .content-container {
   margin: 0 auto;
-  padding: pad(light);
   width: 100%;
   display: grid;
   max-width: $max-width;
@@ -841,7 +875,9 @@ a:hover + .underline {
     }
   }
 
-  .button {
+  .button:hover {
+    color: paint(dark);
+
     a:hover {
       color: paint(dark);
     }
@@ -922,3 +958,5 @@ a:hover + .underline {
   background: rgba(0,0,0,0.35) url(https://source.unsplash.com/2500x600/?gathering) no-repeat right center/cover;
   background-blend-mode: darken;
 }
+
+@import 'responsive';

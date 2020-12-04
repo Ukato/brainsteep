@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "dist"
+		},
+		{
+			"path": "scss"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dist"
+	}
+}

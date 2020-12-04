@@ -7,9 +7,9 @@ $sanserif-font2: 'Arimo', Arial, Helvetica, sans-serif;
 $serif-font: 'Crimson Text', 'Times New Roman', Times, serif;
 
 $colors: (
-  primary: #588157,
-  secondary: #c2d8b9,
-  tertiary: #63768dff,
+  primary: #399E5A,
+  secondary: #BC5D2E,
+  tertiary: #7D4E57,
   light: #e8e9eb,
   dark: #3e3f3e
 );
@@ -19,9 +19,9 @@ $colors: (
 };
 
 $margin: (
-  light: 1rem,
-  medium: 2rem,
-  heavy: 4rem,
+  light: 0.5rem,
+  medium: 1.5rem,
+  heavy: 3rem,
   horizontal: 0 1.5rem,
   vertical: 1.5rem 0
 );
@@ -31,9 +31,9 @@ $margin: (
 };
 
 $padding: (
-  light: 1rem,
-  medium: 2rem,
-  heavy: 4rem,
+  light: 0.5rem,
+  medium: 1.5rem,
+  heavy: 3rem,
   horizontal: 0 1.5rem,
   vertical: 1.5rem 0
 );
@@ -43,10 +43,10 @@ $padding: (
 };
 
 $fontsizes: (
-  smaller: clamp(0.8rem, 1vw, 1rem),
-  regular: clamp(1rem, 1.2vw, 1.4rem),
-  large: clamp(1.4rem, 1.6vw, 2rem),
-  larger: clamp(2rem, 2vw, 2.4rem)
+  smaller: clamp(1rem, 1vw, 1.2rem),
+  regular: clamp(1.2rem, 1.2vw, 1.4rem),
+  large: clamp(1.6rem, 1.8vw, 2rem),
+  larger: clamp(2.4rem, 2.4vw, 2.8rem)
 );
 
 @function fsize($font-size) {

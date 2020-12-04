@@ -9,7 +9,6 @@
     grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: "image header"
                          "body  body";
-    border: 2px solid white;
   }
 
   .card-image {
@@ -49,7 +48,7 @@
 
   .sitenav-left,
   .sitenav-right {
-    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    font-size: fsize(regular);
     height: inherit;
     justify-self: right;
     display: flex;
@@ -67,6 +66,17 @@
   .footer-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "social teacup legal";
+  }
+
+  // Quote Splash
+  .quote-splash {
+    .quote {
+      min-height: 35vh;
+  
+      footer {
+        margin-right: 5rem;
+      }
+    }
   }
 
   /* Showcase Styling */
@@ -89,6 +99,13 @@
 }
 
 @media screen and (min-width:960px) {
+  // Article
+  article {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+
   /* Card List */
   .card-list {
     display: grid;
