@@ -7,7 +7,7 @@
 body {
   background-color: #3e3f3e;
   color: #e8e9eb;
-  font-family: "Arimo", Arial, Helvetica, sans-serif;
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
 }
 
 body header {
@@ -19,12 +19,17 @@ body header {
 }
 
 body header a {
-  font-weight: bold;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-weight: 550;
   color: #e8e9eb;
 }
 
 body header a:hover {
   color: #3e3f3e;
+}
+
+body main h2 {
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
 body footer {
@@ -88,18 +93,19 @@ article h1 {
 article h2 {
   margin: 1.5rem 0;
   font-size: clamp(1.6rem, 1.8vw, 2rem);
-  font-family: "Arimo", Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
   font-weight: lighter;
   text-align: center;
 }
 
 article p {
   max-width: 700px;
-  font-family: "Crimson Text", "Times New Roman", Times, serif;
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  font-weight: 400;
 }
 
 article .article-intro p {
-  font-family: "Arimo", Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
 .main-nav {
@@ -228,6 +234,7 @@ article .article-intro p {
 
 .footer-container .legal p {
   margin: 0 1.5rem;
+  font-size: clamp(1rem, 1vw, 1.2rem);
 }
 
 .main-content {
@@ -417,7 +424,7 @@ article .article-intro p {
   max-width: 700px;
   height: 8rem;
   font-size: 1.2rem;
-  font-family: "Arimo", Arial, Helvetica, sans-serif;
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -619,7 +626,7 @@ article .article-intro p {
 }
 
 .article-intro {
-  font-family: "Arimo", Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
   margin-bottom: 3rem;
   justify-self: center;
 }

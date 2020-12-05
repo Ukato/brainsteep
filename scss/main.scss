@@ -23,12 +23,19 @@ body {
     z-index: 5;
 
     a {
-      font-weight: bold;
+      font-family: $sanserif-font2;
+      font-weight: 550;
       color: paint(light);
 
       &:hover {
         color: paint(dark);
       }
+    }
+  }
+
+  main {
+    h2 {
+      font-family: $sanserif-font2;
     }
   }
 
@@ -106,6 +113,7 @@ article {
   p {
     max-width: 700px;
     font-family: $serif-font;
+    font-weight: 400;
   }
 
   .article-intro {
@@ -250,6 +258,7 @@ article {
 
     p {
       margin: separate(horizontal);
+      font-size: fsize(smaller);
     }
   }
 }
@@ -635,10 +644,6 @@ article {
 
 
 // EVENTS/VENUE
-
-.venue-info {
-}
-
 .venue-intro {
   padding-top: 2rem;
 

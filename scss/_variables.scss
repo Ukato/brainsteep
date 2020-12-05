@@ -2,9 +2,9 @@
 $max-width: 1100px;
 $logo-width: clamp(50px, 100px, 20vw);
 $header-height: calc(#{$logo-width} * 0.8);
-$sanserif-font1: 'Arimo', Arial, Helvetica, sans-serif;
-$sanserif-font2: 'Arimo', Arial, Helvetica, sans-serif;
-$serif-font: 'Crimson Text', 'Times New Roman', Times, serif;
+$sanserif-font1: 'Manrope', Arial, Helvetica, sans-serif;
+$sanserif-font2: 'Quicksand', Arial, Helvetica, sans-serif;
+$serif-font: 'Roboto Slab', 'Times New Roman', Times, serif;
 
 $colors: (
   primary: #399E5A,
