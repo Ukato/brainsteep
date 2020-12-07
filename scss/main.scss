@@ -37,6 +37,14 @@ body {
     h2 {
       font-family: $sanserif-font2;
     }
+
+    a {
+      color: paint(primary);
+
+      &:hover {
+        color: paint(secondary);
+      }
+    }
   }
 
   footer {
@@ -246,6 +254,7 @@ article {
   }
 
   .teacup-container {
+    margin: 0.5rem 0;
     grid-area: teacup;
   }
 
@@ -286,7 +295,7 @@ article {
 
   h2 {
     margin: 0.5rem 0;
-    font-size: fsize(large);
+    font-size: fsize(larger);
     font-weight: lighter;
   }
 
@@ -340,11 +349,13 @@ article {
     h2 {
       margin-bottom: 1rem;
       font-weight: bold;
+      font-size: fsize(larger);
       text-align: center;
     }
 
     h3 {
       font-weight: lighter;
+      font-size: fsize(large);
       text-align: center;
     }
   }
@@ -360,12 +371,14 @@ article {
 
   h2 {
     margin: separate(medium);
+    font-size: fsize(large);
     text-align: center;
   }
 
   h3 {
     margin: 0 1rem 2rem;
     text-align: center;
+    font-size: fsize(regular);
   }
 
   .profile {
@@ -441,6 +454,7 @@ article {
       max-width: 300px;
       height: 2.5rem;
       font-size: 1.2rem;
+      font-family: $serif-font;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -461,7 +475,7 @@ article {
       max-width: 700px;
       height: 8rem;
       font-size: 1.2rem;
-      font-family: $sanserif-font1;
+      font-family: $serif-font;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -532,7 +546,6 @@ article {
 .page-description {
 
   h2 {
-  margin: separate(medium);
   font-size: fsize(large);
   text-transform: uppercase;
   font-weight: lighter;
@@ -540,7 +553,7 @@ article {
   }
 
   p {
-    margin: 0.5rem 1.5rem;
+    margin: 0.5rem 0;
   }
 }
 
@@ -549,6 +562,25 @@ article {
   margin: 1rem 1rem 2rem;
   font-size: fsize(large);
   text-align: center;
+}
+
+.author-header {
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+
+  img {
+    max-width: 300px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  p {
+    max-width: 500px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
 }
 
 
@@ -563,10 +595,11 @@ article {
 
   h1 {
     margin: 0 2rem;
-    padding: 0.5rem;
+    padding: pad(medium);
     text-align: center;
-    font-weight: bold;
+    text-transform: uppercase;
     font-size: fsize(larger);
+    font-family: $sanserif-font2;
     line-height: lheight(larger);
   }
 } 
@@ -601,6 +634,7 @@ article {
 
   .card-image {
     grid-area: image;
+    object-fit: cover;
   }
 
   .card-header {
@@ -644,6 +678,10 @@ article {
 
 
 // EVENTS/VENUE
+.venue-info {
+  padding-bottom: pad(heavy);
+}
+
 .venue-intro {
   padding-top: 2rem;
 
@@ -681,7 +719,7 @@ article {
     }
   
     a:hover {
-      color: paint(primary);
+      color: paint(secondary);
     }
   
     h4 {
@@ -716,7 +754,7 @@ article {
 
 .tag {
   margin: 0.2rem 0 0.2rem 0.5rem;
-  padding: 0.3rem 0.8rem;
+  padding: 0.15rem 0.8rem;
   display: inline;
   height: 1.6rem;
   font-size: 0.8rem;
@@ -733,10 +771,8 @@ article {
 }
 
 .tag-header {
-  margin: separate(medium);
-  padding: 1.2rem;
-  height: 4rem;
-  font-size: 3rem;
+  justify-self: center;
+  align-self: center;
   text-align: center;
   border-radius: 15px 1px 15px 1px;
   background: paint(tertiary);
@@ -843,7 +879,7 @@ a:hover + .underline {
     color: paint(dark);
 
     &:hover {
-      color: paint(primary);
+      color: paint(secondary);
     }
   }
 
@@ -870,7 +906,7 @@ a:hover + .underline {
     color: paint(light);
 
     &:hover {
-      color: paint(primary);
+      color: paint(secondary);
     }
   }
 
