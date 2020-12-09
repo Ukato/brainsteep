@@ -602,6 +602,10 @@ article {
     font-family: $sanserif-font2;
     line-height: lheight(larger);
   }
+
+  .tag-header {
+    padding: 1rem 2.5rem;
+  }
 } 
 
 
@@ -799,6 +803,10 @@ article {
   background: #463730;
 }
 
+.herbal-tag {
+  background: palevioletred;
+}
+
 .personal-tag {
   background: #29335C;
 }
@@ -809,6 +817,10 @@ article {
 
 .concept-tag {
   background: #5B3758;
+}
+
+.general-tag {
+  background: #3293cc;
 }
 
 
@@ -824,6 +836,10 @@ article {
   width: 0%;
   height:2px;
   border-radius: 1rem;
+}
+
+.center-text {
+  text-align: center;
 }
 
 @keyframes show-underline {
@@ -981,22 +997,22 @@ a:hover + .underline {
 }
 
 #tea-header {
-  background: rgba(0,0,0,0.5) url(/img/background/tea/tea-background-1.jpg) no-repeat right center/cover;
+  background: rgba(0,0,0,0.2) url(/img/background/general/tea-header.jpg) no-repeat right bottom /cover;
   background-blend-mode: darken;
 }
 
 #philosophy-header {
-  background: rgba(0,0,0,0.5) url(https://source.unsplash.com/2500x600/?philosophy) no-repeat left center/cover;
+  background: rgba(0,0,0,0.5) url(/img/background/general/philosophy-header.jpg) no-repeat left 52% /cover;
   background-blend-mode: darken;
 }
 
 #podcast-header {
-  background: rgba(0,0,0,0.5) url(https://source.unsplash.com/2500x600/?podcast) no-repeat center center/cover;
+  background: rgba(0,0,0,0.5) url(/img/background/general/podcast-header.jpg) no-repeat center 35% /cover;
   background-blend-mode: darken;
 }
 
 #events-header {
-  background: rgba(0,0,0,0.35) url(https://source.unsplash.com/2500x600/?gathering) no-repeat right center/cover;
+  background: rgba(0,0,0,0.35) url(/img/background/general/events-header.jpg) no-repeat right 35% /cover;
   background-blend-mode: darken;
 }
 

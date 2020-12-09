@@ -7,11 +7,11 @@ $sanserif-font2: 'Quicksand', Arial, Helvetica, sans-serif;
 $serif-font: 'Roboto Slab', 'Times New Roman', Times, serif;
 
 $colors: (
-  primary: #399E5A,
-  secondary: #BC5D2E,
-  tertiary: #7D4E57,
+  primary:#399e5a,
+  secondary: #C1731F,
+  tertiary: #C0BABC,
   light: #e8e9eb,
-  dark: #3e3f3e
+  dark:#3e3f3e
 );
 
 @function paint($color-name) {
