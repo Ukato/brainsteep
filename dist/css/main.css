@@ -375,7 +375,6 @@ article .article-intro p {
 
 .profiles-area .profile p {
   text-align: center;
-  text-indent: 0;
 }
 
 .contact {
@@ -613,7 +612,6 @@ article .article-intro p {
 
 .card .card-body p {
   font-weight: normal;
-  text-indent: 0;
 }
 
 .card .card-body .button {
@@ -677,6 +675,14 @@ article .article-intro p {
   justify-self: center;
 }
 
+.article-body p {
+  text-indent: 2.5rem;
+}
+
+.article-body p a {
+  color: #399e5a;
+}
+
 .category-tags {
   padding: 1rem 0.5rem 0 0;
   display: flex;
@@ -692,7 +698,7 @@ article .article-intro p {
   font-size: 0.8rem;
   text-align: center;
   border-radius: 15px 1px 15px 1px;
-  background: #C0BABC;
+  background: #949091;
   color: #e8e9eb;
   opacity: 0.75;
 }
@@ -707,7 +713,7 @@ article .article-intro p {
   align-self: center;
   text-align: center;
   border-radius: 15px 1px 15px 1px;
-  background: #C0BABC;
+  background: #949091;
   color: #e8e9eb;
 }
 
@@ -745,6 +751,10 @@ article .article-intro p {
 
 .concept-tag {
   background: #5B3758;
+}
+
+.general-tag {
+  background: #3293cc;
 }
 
 .outline {

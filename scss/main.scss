@@ -408,7 +408,6 @@ article {
 
     p {
       text-align: center;
-      text-indent: 0;
     }
   }
 }
@@ -670,7 +669,6 @@ article {
 
     p {
       font-weight: normal;
-      text-indent: 0;
     }
 
     .button {
@@ -744,6 +742,14 @@ article {
 
 .article-body {
   justify-self: center;
+  
+  p {
+    text-indent: 2.5rem;
+
+    a {
+      color: paint(primary);
+    }
+  }
 }
 
 
