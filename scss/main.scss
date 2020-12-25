@@ -311,7 +311,8 @@ article {
   }
 
   iframe {
-    align-self: center;
+    justify-self: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -667,9 +668,9 @@ article {
   .card-body {
     padding: 0.5rem 1rem;
     grid-area: body;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
 
     p {
       font-weight: normal;
