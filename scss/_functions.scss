@@ -1,8 +1,0 @@
-// Set Text Color
-@function contrast-color($color) {
-  @if(lightness($color) > 50) {
-    @return paint(dark);
-  } @else {
-    @return paint(light);
-  }
-}

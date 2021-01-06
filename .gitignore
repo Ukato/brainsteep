@@ -1,0 +1,3 @@
+# files to ignore so they're not sent up to github
+scss/
+brainsteep.code-workspace
