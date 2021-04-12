@@ -733,13 +733,19 @@ article .article-intro p {
   border-radius: 10px;
 }
 
-.card :hover img {
+.card:hover img {
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
-  transition: transform 250ms;
-  transition: transform 250ms, -webkit-transform 250ms;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+  
+}
+
+.card img {
+  border-radius: 5px;
+  transition: transform 250ms;
 }
 
 .card .card-image {
