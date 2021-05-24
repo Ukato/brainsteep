@@ -94,7 +94,21 @@
 
   .double-showcase {
     flex-direction: row;
-    justify-content: space-around;
+
+    .showcase {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .left-showcase > * {
+      max-width: 1100px;
+      margin-left: auto;
+    }
+
+    .right-showcase > * {
+      max-width: 1100px;
+      margin-right: auto;
+    }
   }
 
   /* Profiles Section */

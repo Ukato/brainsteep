@@ -530,14 +530,14 @@ article {
       padding: 0.5rem;
       max-width: $max-width;
       text-align: center;
-      font-size: clamp(1.6rem, 2vw, 2.4rem);
+      font-size: fsize(larger);
       line-height: lheight(large);
     }
 
     footer {
       margin-right: 2rem;
-      width: auto;
-      align-self: flex-end;
+      max-width: $max-width + 300px;
+      align-self: center;
       background: none;
       text-align: right;
       font-size: fsize(smaller);
