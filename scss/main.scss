@@ -22,6 +22,8 @@ body {
     background-color: paint(primary);
     z-index: 5;
 
+    transition: transform, 1s;
+
     a {
       font-family: $sanserif-font2;
       font-weight: 550;
@@ -230,6 +232,9 @@ article {
   grid-area: nav-right;
 }
 
+.hide-header {
+  transform: translateY(calc(#{$header-height} * -1));
+}
 
 // FOOTER STYLES
 
@@ -535,7 +540,9 @@ article {
     }
 
     footer {
-      margin-right: 2rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      // margin-left: 6rem;
       max-width: $max-width + 300px;
       align-self: center;
       background: none;
