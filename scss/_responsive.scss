@@ -68,12 +68,6 @@
     justify-self: left;
   }
 
-  /* Footer Styling */
-  .footer-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "social teacup legal";
-  }
-
   // Quote Splash
   .quote-splash {
     .quote {
@@ -149,5 +143,12 @@
       width: 900px;
       height: 200px;
     }
+  }
+
+  /* Footer Styling */
+  .footer-container {
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "social teacup legal";
   }
 }

@@ -239,9 +239,7 @@ article {
 // FOOTER STYLES
 
 .footer-container {
-  max-width: $max-width;
-  margin: 0 auto;
-  padding: 0.25rem;
+  padding: 1.5rem 0.25rem;
   background: paint(primary);
   display: grid;
   grid-template-columns: 1fr;

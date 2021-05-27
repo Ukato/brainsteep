@@ -46,7 +46,7 @@ $fontsizes: (
   smaller: clamp(1rem, 1vw, 1.2rem),
   regular: clamp(1.2rem, 1.2vw, 1.4rem),
   large: clamp(1.6rem, 1.8vw, 2rem),
-  larger: clamp(2rem, 2vw, 2.8rem)
+  larger: clamp(1.8rem, 3vw, 2.8rem)
 );
 
 @function fsize($font-size) {
