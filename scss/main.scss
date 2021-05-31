@@ -631,75 +631,9 @@ article {
 } 
 
 
-// CARD LIST
+// CARD/ CARD LIST
 
-.card-list {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-}
 
-.card {
-  margin: 0.5rem 1rem;
-  max-width: 500px;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 0.25fr 0.25fr 0.5fr;
-  grid-template-areas: "image"
-                       "header"
-                       "body";
-  border-radius: 10px;
-
-  :hover {
-    img {
-      transition: transform 250ms;
-      transform: scale(1.1);
-    }
-  }
-
-  .card-image {
-    grid-area: image;
-    object-fit: cover;
-  }
-
-  .card-header {
-    padding: 1rem 0.5rem 0.5rem;
-    grid-area: header;
-
-    h2 {
-      margin-bottom: 0.2rem;
-      font-weight: lighter;
-    }
-
-    h3 {
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-
-    h4 {
-      margin-bottom: 1.5rem;
-      font-size: clamp(0.8rem, 1vw, 1rem);
-    }
-  }
-
-  .card-body {
-    padding: 0.5rem 1rem;
-    grid-area: body;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-
-    p {
-      font-weight: normal;
-    }
-
-    .button {
-      min-width: 200px;
-      align-self: center;
-    }
-  }
-}
 
 
 // EVENTS/VENUE

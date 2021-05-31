@@ -4,16 +4,7 @@
 // Display full header at larger screen sizes
 @media screen and (min-width:500px) {
   /* Card Styling */
-  .card {
-    grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-template-areas: "image header"
-                         "body  body";
-  }
-
-  .card-image {
-    padding: 1rem;
-  }
+  
 
   .showcase {
     iframe {
@@ -136,10 +127,7 @@
 
 
   /* Card List */
-  .card-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+
 
   .showcase {
     iframe {
