@@ -632,7 +632,55 @@ article {
 
 
 // CARD/ CARD LIST
+.card {
+  margin: separate(light);
+  padding: pad(medium);
 
+  max-width: 550px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'image header'
+                       'body  body';
+  gap: 1rem;
+
+  border-radius: 2rem;
+  
+  .card-image {
+    grid-area: image;
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  .card-header {
+    grid-area: header;
+
+    h2 {
+      font-size: fsize(regular);
+      font-weight: 100;
+    }
+    
+    h3 {
+      font-size: fsize(smaller);
+    }
+  }
+
+  .card-body {
+    grid-area: body;
+
+    h4 {
+      margin-bottom: 1.2rem;
+      padding: 0;
+
+      font-size: 0.9rem;
+    }
+
+    p {
+      padding: 0;
+      font-size: fsize(smaller);
+    }
+  }
+}
 
 
 
@@ -843,7 +891,6 @@ a:hover + .underline {
 .content-container {
   margin: 0 auto;
   width: 100%;
-  display: grid;
   max-width: $max-width;
 }
 

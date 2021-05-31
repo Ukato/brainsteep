@@ -4,7 +4,17 @@
 // Display full header at larger screen sizes
 @media screen and (min-width:500px) {
   /* Card Styling */
-  
+  .card {
+    .card-header {
+      h2 {
+        font-size: 1.6rem;
+      }
+      
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  }
 
   .showcase {
     iframe {
