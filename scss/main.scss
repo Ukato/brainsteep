@@ -623,6 +623,10 @@ article {
     font-size: fsize(larger);
     font-family: $sanserif-font2;
     line-height: lheight(larger);
+
+    opacity: 0;
+
+    animation: fade-down 1.5s 0.5s forwards ease-out;
   }
 
   .tag-header {
@@ -630,6 +634,16 @@ article {
   }
 } 
 
+@keyframes fade-down {
+  from {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 
 // CARD/ CARD LIST
 .card {
