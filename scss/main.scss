@@ -646,6 +646,12 @@ article {
 }
 
 // CARD/ CARD LIST
+.card-list {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
 .card {
   margin: separate(light);
   padding: pad(medium);
@@ -663,7 +669,7 @@ article {
   .card-image {
     grid-area: image;
     justify-self: center;
-    align-self: flex-end;
+    align-self: flex-start;
   }
 
   .card-header {
